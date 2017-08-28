@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright (C) 2017 The Android Open Source Project
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -27,9 +26,9 @@
             android:id="@+id/button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:onClick="show"
             android:tag="constraint_example_1"
             android:text="@string/centering_views"
@@ -43,9 +42,9 @@
             android:id="@+id/button2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:onClick="show"
             android:tag="constraint_example_2"
             android:text="@string/basic_arrange"
@@ -139,4 +138,5 @@
             tools:layout_constraintLeft_creator="1"
             tools:layout_constraintRight_creator="1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>

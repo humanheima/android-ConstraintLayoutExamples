@@ -1,0 +1,4 @@
+#Mon Jun 10 10:48:12 CST 2019
+base.0=/Users/dumingwei/AndroidStudioProjects/android-ConstraintLayoutExamples/app/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex
