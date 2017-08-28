@@ -26,8 +26,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.74"
-        app:layout_constraintRight_toRightOf="@+id/button5"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintRight_toRightOf="@+id/button5"/>
 
     <Button
         android:id="@+id/button5"

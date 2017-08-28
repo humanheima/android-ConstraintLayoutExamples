@@ -50,4 +50,8 @@ public class MainActivity extends AppCompatActivity {
     public void showConstraintSetExample(View view) {
         startActivity(new Intent(this, ConstraintSetExampleActivity.class));
     }
+
+    public void launchTestActivity(View view) {
+        TestActivity.launch(this);
+    }
 }
