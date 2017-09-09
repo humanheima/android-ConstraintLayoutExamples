@@ -16,7 +16,6 @@
 
 package com.example.android.constraintlayoutexamples;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -48,10 +47,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showConstraintSetExample(View view) {
-        startActivity(new Intent(this, ConstraintSetExampleActivity.class));
+        ConstraintSetExampleActivity.launch(this);
     }
 
     public void launchTestActivity(View view) {
         TestActivity.launch(this);
     }
+
+    public void replaceLinearLayout(View view) {
+        setContentView(R.layout.constraint_replace_linear_layout);
+        mShowingLayout = true;
+    }
+
+    public void replaceRelativeLayout(View view) {
+        setContentView(R.layout.constraint_replace_relative_layout);
+        mShowingLayout = true;
+    }
+
 }

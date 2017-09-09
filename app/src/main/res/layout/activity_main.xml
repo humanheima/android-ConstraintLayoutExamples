@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  Copyright (C) 2017 The Android Open Source Project
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-       http://www.apache.org/licenses/LICENSE-2.0
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-  -->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.android.constraintlayoutexamples.MainActivity">
+    android:layout_height="match_parent">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/activity_main"
@@ -37,7 +25,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1" />
+            tools:layout_constraintRight_creator="1"/>
 
         <Button
             android:id="@+id/button2"
@@ -53,7 +41,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1" />
+            tools:layout_constraintRight_creator="1"/>
 
         <Button
             android:id="@+id/button15"
@@ -67,7 +55,7 @@
             app:layout_constraintRight_toRightOf="@+id/button30"
             app:layout_constraintTop_toBottomOf="@+id/button30"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1" />
+            tools:layout_constraintRight_creator="1"/>
 
         <Button
             android:id="@+id/button18"
@@ -81,7 +69,7 @@
             app:layout_constraintRight_toRightOf="@+id/button15"
             app:layout_constraintTop_toBottomOf="@+id/button15"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1" />
+            tools:layout_constraintRight_creator="1"/>
 
         <Button
             android:id="@+id/button19"
@@ -95,7 +83,7 @@
             app:layout_constraintRight_toRightOf="@+id/button18"
             app:layout_constraintTop_toBottomOf="@+id/button18"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1" />
+            tools:layout_constraintRight_creator="1"/>
 
         <Button
             android:id="@+id/button20"
@@ -109,7 +97,7 @@
             app:layout_constraintRight_toRightOf="@+id/button19"
             app:layout_constraintTop_toBottomOf="@+id/button19"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1" />
+            tools:layout_constraintRight_creator="1"/>
 
         <Button
             android:id="@+id/button21"
@@ -123,7 +111,7 @@
             app:layout_constraintRight_toRightOf="@+id/button20"
             app:layout_constraintTop_toBottomOf="@+id/button20"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1" />
+            tools:layout_constraintRight_creator="1"/>
 
         <Button
             android:id="@+id/button30"
@@ -137,24 +125,7 @@
             app:layout_constraintRight_toRightOf="@+id/button2"
             app:layout_constraintTop_toBottomOf="@+id/button2"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1" />
-
-        <Button
-            android:id="@+id/button16"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            android:onClick="launchTestActivity"
-            android:text="launchTestActivity"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button17"
-            app:layout_constraintVertical_bias="0.0"/>
+            tools:layout_constraintRight_creator="1"/>
 
         <Button
             android:id="@+id/button17"
@@ -162,14 +133,71 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:text="Button"
+            android:layout_marginTop="8dp"
             android:onClick="show"
             android:tag="constraint_example_8"
+            android:text="constraint_example_8"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button21"/>
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/button21"
-            app:layout_constraintHorizontal_bias="0.501"/>
+            android:onClick="launchTestActivity"
+            android:text="launchTestActivity"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button17"/>
+
+        <Button
+            android:id="@+id/btn_example_9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="show"
+            android:tag="constraint_example_9"
+            android:text="测试宽高比例"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button16"/>
+
+        <Button
+            android:id="@+id/btn_test_linear_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="测试替代LinearLayout"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_example_9"/>
+
+        <Button
+            android:id="@+id/btn_test_relative_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="replaceRelativeLayout"
+            android:text="测试替代RelativeLayout"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_test_linear_layout"/>
 
     </android.support.constraint.ConstraintLayout>
 

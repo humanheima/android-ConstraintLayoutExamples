@@ -16,6 +16,8 @@
 
 package com.example.android.constraintlayoutexamples;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.constraint.ConstraintSet;
@@ -48,6 +50,11 @@ public class ConstraintSetExampleActivity extends AppCompatActivity {
      * ConstraintSet to be applied on the normal ConstraintLayout to make the Image bigger.
      */
     private ConstraintSet mConstraintSetBig = new ConstraintSet();
+
+    public static void launch(Context context) {
+        Intent starter = new Intent(context, ConstraintSetExampleActivity.class);
+        context.startActivity(starter);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
