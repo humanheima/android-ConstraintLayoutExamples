@@ -11,7 +11,6 @@
   limitations under the License.
   -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -32,6 +31,7 @@
             android:onClick="show"
             android:tag="constraint_example_1"
             android:text="@string/centering_views"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -40,6 +40,7 @@
 
         <Button
             android:id="@+id/button2"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -48,6 +49,7 @@
             android:onClick="show"
             android:tag="constraint_example_2"
             android:text="@string/basic_arrange"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button"
@@ -56,12 +58,14 @@
 
         <Button
             android:id="@+id/button15"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="show"
             android:tag="constraint_example_4"
             android:text="@string/advanced_arrangement"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@+id/button30"
             app:layout_constraintRight_toRightOf="@+id/button30"
             app:layout_constraintTop_toBottomOf="@+id/button30"
@@ -70,12 +74,14 @@
 
         <Button
             android:id="@+id/button18"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="show"
             android:tag="constraint_example_5"
             android:text="@string/aspect_ratio"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@+id/button15"
             app:layout_constraintRight_toRightOf="@+id/button15"
             app:layout_constraintTop_toBottomOf="@+id/button15"
@@ -84,12 +90,14 @@
 
         <Button
             android:id="@+id/button19"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="show"
             android:tag="constraint_example_6"
             android:text="@string/basic_chains"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@+id/button18"
             app:layout_constraintRight_toRightOf="@+id/button18"
             app:layout_constraintTop_toBottomOf="@+id/button18"
@@ -98,12 +106,14 @@
 
         <Button
             android:id="@+id/button20"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="showConstraintSetExample"
             android:tag="constraint_example_7"
             android:text="@string/constraintset"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@+id/button19"
             app:layout_constraintRight_toRightOf="@+id/button19"
             app:layout_constraintTop_toBottomOf="@+id/button19"
@@ -112,12 +122,14 @@
 
         <Button
             android:id="@+id/button21"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="show"
             android:tag="constraint_example_x1"
             android:text="@string/advanced_chains"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@+id/button20"
             app:layout_constraintRight_toRightOf="@+id/button20"
             app:layout_constraintTop_toBottomOf="@+id/button20"
@@ -126,12 +138,14 @@
 
         <Button
             android:id="@+id/button30"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="show"
             android:tag="constraint_example_3"
             android:text="@string/guidelines"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@+id/button2"
             app:layout_constraintRight_toRightOf="@+id/button2"
             app:layout_constraintTop_toBottomOf="@+id/button2"
