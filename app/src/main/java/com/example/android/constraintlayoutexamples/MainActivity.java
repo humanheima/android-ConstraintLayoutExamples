@@ -64,4 +64,8 @@ public class MainActivity extends AppCompatActivity {
         mShowingLayout = true;
     }
 
+    public void dynamicAddView(View view) {
+        DynamicAddViewActivity.launch(this);
+    }
+
 }

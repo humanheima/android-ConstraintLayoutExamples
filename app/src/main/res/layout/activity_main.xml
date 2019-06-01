@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,125 +14,141 @@
             android:id="@+id/button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:onClick="show"
             android:tag="constraint_example_1"
             android:text="@string/centering_views"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1"/>
+            tools:layout_constraintRight_creator="1" />
 
         <Button
             android:id="@+id/button2"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:onClick="show"
             android:tag="constraint_example_2"
             android:text="@string/basic_arrange"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1"/>
+            tools:layout_constraintRight_creator="1" />
 
         <Button
             android:id="@+id/button15"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="show"
             android:tag="constraint_example_4"
             android:text="@string/advanced_arrangement"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@+id/button30"
             app:layout_constraintRight_toRightOf="@+id/button30"
             app:layout_constraintTop_toBottomOf="@+id/button30"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1"/>
+            tools:layout_constraintRight_creator="1" />
 
         <Button
             android:id="@+id/button18"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="show"
             android:tag="constraint_example_5"
             android:text="@string/aspect_ratio"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@+id/button15"
             app:layout_constraintRight_toRightOf="@+id/button15"
             app:layout_constraintTop_toBottomOf="@+id/button15"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1"/>
+            tools:layout_constraintRight_creator="1" />
 
         <Button
             android:id="@+id/button19"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="show"
             android:tag="constraint_example_6"
             android:text="@string/basic_chains"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@+id/button18"
             app:layout_constraintRight_toRightOf="@+id/button18"
             app:layout_constraintTop_toBottomOf="@+id/button18"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1"/>
+            tools:layout_constraintRight_creator="1" />
 
         <Button
             android:id="@+id/button20"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="showConstraintSetExample"
             android:tag="constraint_example_7"
             android:text="@string/constraintset"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@+id/button19"
             app:layout_constraintRight_toRightOf="@+id/button19"
             app:layout_constraintTop_toBottomOf="@+id/button19"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1"/>
+            tools:layout_constraintRight_creator="1" />
 
         <Button
             android:id="@+id/button21"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="show"
             android:tag="constraint_example_x1"
             android:text="@string/advanced_chains"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@+id/button20"
             app:layout_constraintRight_toRightOf="@+id/button20"
             app:layout_constraintTop_toBottomOf="@+id/button20"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1"/>
+            tools:layout_constraintRight_creator="1" />
 
         <Button
             android:id="@+id/button30"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="show"
             android:tag="constraint_example_3"
             android:text="@string/guidelines"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@+id/button2"
             app:layout_constraintRight_toRightOf="@+id/button2"
             app:layout_constraintTop_toBottomOf="@+id/button2"
             tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1"/>
+            tools:layout_constraintRight_creator="1" />
 
         <Button
             android:id="@+id/button17"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
             android:onClick="show"
             android:tag="constraint_example_8"
             android:text="constraint_example_8"
@@ -141,30 +156,30 @@
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button21"/>
+            app:layout_constraintTop_toBottomOf="@+id/button21" />
 
         <Button
             android:id="@+id/button16"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
             android:onClick="launchTestActivity"
             android:text="launchTestActivity"
             android:textAllCaps="false"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button17"/>
+            app:layout_constraintTop_toBottomOf="@+id/button17" />
 
         <Button
             android:id="@+id/btn_example_9"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
             android:onClick="show"
             android:tag="constraint_example_9"
             android:text="测试宽高比例"
@@ -172,32 +187,49 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button16"/>
+            app:layout_constraintTop_toBottomOf="@+id/button16" />
 
         <Button
             android:id="@+id/btn_test_linear_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
             android:text="测试替代LinearLayout"
+            android:textAllCaps="false"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_example_9"/>
+            app:layout_constraintTop_toBottomOf="@+id/btn_example_9" />
 
         <Button
             android:id="@+id/btn_test_relative_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
             android:onClick="replaceRelativeLayout"
             android:text="测试替代RelativeLayout"
+            android:textAllCaps="false"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_test_linear_layout"/>
+            app:layout_constraintTop_toBottomOf="@+id/btn_test_linear_layout" />
+
+        <Button
+            android:id="@+id/btn_dynamic_addview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:onClick="dynamicAddView"
+            android:text="约束布局动态添加View，改变约束"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_test_linear_layout" />
+
 
     </android.support.constraint.ConstraintLayout>
 
