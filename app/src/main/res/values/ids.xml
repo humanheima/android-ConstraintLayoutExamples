@@ -6,4 +6,6 @@
     <item name="tvRight" type="id" />
     <item name="tvBottom" type="id" />
 
+    <item name="guideline" type="id" />
+
 </resources>
