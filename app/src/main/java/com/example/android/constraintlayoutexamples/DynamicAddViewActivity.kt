@@ -37,9 +37,11 @@ class DynamicAddViewActivity : AppCompatActivity() {
              changeConstraintSet()
          }*/
 
-        addGuideLine()
+        //addGuideLine()
 
         //addViewUseConstraintSet()
+
+        addGuideLineUseConstraintSet()
     }
 
     /**
@@ -166,7 +168,7 @@ class DynamicAddViewActivity : AppCompatActivity() {
                 ScreenUtil.dpToPx(this, 24))
 
         //设置高度
-        constraintSet.constrainHeight(R.id.tvBottom,ConstraintLayout.LayoutParams.WRAP_CONTENT)
+        constraintSet.constrainHeight(R.id.tvBottom, ConstraintLayout.LayoutParams.WRAP_CONTENT)
 
         constraintLayout.addView(ivLeft)
         constraintLayout.addView(tvRight)
@@ -192,8 +194,6 @@ class DynamicAddViewActivity : AppCompatActivity() {
         val guideLayoutParams: ConstraintLayout.LayoutParams = ConstraintLayout.LayoutParams(
                 ConstraintLayout.LayoutParams.WRAP_CONTENT, ConstraintLayout.LayoutParams.WRAP_CONTENT)
         guideLayoutParams.guidePercent = 0.4f
-        guideLayoutParams.topToTop = R.id.cl_root
-        guideLayoutParams.bottomToBottom = R.id.cl_root
         //注意
         guideLayoutParams.orientation = ConstraintLayout.LayoutParams.HORIZONTAL
 
@@ -218,6 +218,45 @@ class DynamicAddViewActivity : AppCompatActivity() {
         constraintLayout.addView(ivLeft)
 
     }
+
+    private fun addGuideLineUseConstraintSet() {
+        val constraintLayout = ConstraintLayout(this)
+        constraintLayout.id = R.id.cl_root
+        constraintLayout.layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT)
+        //先设置根布局
+        setContentView(constraintLayout)
+
+        val guideline = Guideline(this)
+        guideline.id = R.id.guideline
+
+        val set = ConstraintSet()
+        set.create(R.id.guideline, ConstraintSet.HORIZONTAL_GUIDELINE)
+        set.constrainWidth(R.id.guideline, ConstraintLayout.LayoutParams.WRAP_CONTENT)
+        set.constrainHeight(R.id.guideline, ConstraintLayout.LayoutParams.WRAP_CONTENT)
+        set.setGuidelinePercent(R.id.guideline, 0.4f)
+
+        constraintLayout.addView(guideline)
+
+        val ivLeft = ImageView(this)
+        ivLeft.id = R.id.ivLeft
+        ivLeft.scaleType = ImageView.ScaleType.CENTER_CROP
+        ivLeft.setImageResource(R.drawable.lake)
+
+        set.constrainWidth(R.id.ivLeft, 0)
+        set.constrainHeight(R.id.ivLeft, 0)
+        set.setDimensionRatio(R.id.ivLeft, "h,16:9")
+        set.connect(R.id.ivLeft, ConstraintSet.BOTTOM, R.id.guideline, ConstraintSet.TOP)
+        set.connect(R.id.ivLeft, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START)
+        set.connect(R.id.ivLeft, ConstraintSet.END, ConstraintSet.PARENT_ID, ConstraintSet.END)
+
+        constraintLayout.addView(ivLeft)
+
+        TransitionManager.beginDelayedTransition(cl_root)
+        set.applyTo(cl_root)
+        //设置一个动画效果，让约束改变平滑一点，这一步不是必须的
+    }
+
 
     private fun addViewPartView() {
         val ivLeft = ImageView(this)
